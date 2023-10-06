@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nokora:wght@400;700&family=Praise&display=swap"
+      rel="stylesheet"
+    />
+    <title>Del B</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Home</a>
+      <a href="a.html">Task A</a>
+      <a href="b.html">Task B</a>
+      <a href="c.html">Task C</a>
+      <a href="d.html">Task D</a>
+    </header>
+    <main id="task_b">
+      <h1 id="task_headline">Del B</h1>
+      <p id="task_desc">
+        Denne opgave er hovedsageligt løst ved anvendelsen af grid og flex til
+        at skabe et simpelt og struktureret layout. Hver card er i sin egen
+        article, som ligger i en section. Min section har et grid, der skaber
+        layoutet i desktop format. Flex er anvendt i de enkelte cards til at
+        placere elementer korrekt i forhold til hinanden.
+      </p>
+      <div class="section_wrapper">
+        <section id="dashboard">
+          <article class="person">
+            <div>
+              <img src="img/person2.jpg" />
+              <div class="title">
+                <h2>Steven Shellman</h2>
+                <h3>Report for</h3>
+              </div>
+            </div>
+            <div class="time">
+              <form>
+                <div>
+                  <input type="radio" name="schedule" id="daily" />
+                  <label for="daily">Daily</label>
+                </div>
+                <div>
+                  <input type="radio" name="schedule" id="weekly" />
+                  <label for="weekly">Weekly</label>
+                </div>
+                <div>
+                  <input type="radio" name="schedule" id="monthly" />
+                  <label for="monthly">Monthly</label>
+                </div>
+              </form>
+            </div>
+          </article>
+          <article class="result">
+            <div>
+              <p>Work</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <p class="display">24hrs</p>
+              <p>Last Week: 26hrs</p>
+            </div>
+          </article>
+          <article class="result">
+            <div>
+              <p>Exercise</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <p class="display">3hrs</p>
+              <p>Last Week: 2hrs</p>
+            </div>
+          </article>
+          <article class="result">
+            <div>
+              <p>Play</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <p class="display">7hrs</p>
+              <p>Last Week: 9hrs</p>
+            </div>
+          </article>
+          <article class="result">
+            <div>
+              <p>Social</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <p class="display">2hrs</p>
+              <p>Last Week: 6hrs</p>
+            </div>
+          </article>
+          <article class="result">
+            <div>
+              <p>Study</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <p class="display">12hrs</p>
+              <p>Last Week: 14hrs</p>
+            </div>
+          </article>
+          <article class="result">
+            <div>
+              <p>Self Care</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <p class="display">3hrs</p>
+              <p>Last Week: 1.5hrs</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
