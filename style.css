@@ -88,16 +88,17 @@ body {
 }
 
 #task_a {
-  section {
+  max-width: 1000px;
+  & section {
     background-color: var(--offgrey);
     border-radius: 16px;
     margin: 0.5rem;
   }
 
-  .card_wrapper {
+  & .card_wrapper {
     container-type: inline-size;
   }
-  #connect {
+  & #connect {
     background-color: var(--secondary);
     border-radius: 16px;
     display: grid;
@@ -107,41 +108,41 @@ body {
     margin-top: 2rem;
   }
 
-  #connect > div {
+  & #connect > div {
     display: flex;
     place-content: center;
     gap: 20px;
     margin-top: 1rem;
   }
 
-  #connect > div > svg {
+  & #connect > div > svg {
     aspect-ratio: 1;
     padding: 0.5rem;
     border-radius: 50%;
     fill: var(--offgrey);
     background-color: var(--primary);
   }
-  h3 {
+  & h3 {
     font-size: 1.25rem;
   }
-  p {
+  & p {
     font-size: var(--text-mobile);
     line-height: 1.75rem;
   }
 
   @container (width < 515px) {
-    img {
+    & img {
       border-radius: 16px;
       margin-bottom: 1rem;
     }
 
-    .jobrole {
+    & .jobrole {
       font-size: 1.12rem;
       opacity: 0.7;
       margin-bottom: 1rem;
     }
 
-    .title,
+    & .title,
     .desc {
       margin-left: 1.5rem;
       margin-right: 1.5rem;
@@ -149,85 +150,85 @@ body {
     }
   }
   @container (width > 514px) {
-    .card {
+    & .card {
       display: grid;
       grid-template-columns: 150px 1fr;
       gap: 20px;
       padding: 1rem;
     }
 
-    img {
+    & img {
       border-radius: 16px;
       margin-bottom: 1rem;
     }
 
-    .jobrole {
+    & .jobrole {
       font-size: 1.12rem;
       opacity: 0.7;
     }
 
-    .title {
+    & .title {
       grid-column: 2/3;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
-    .title,
+    & .title,
     .desc {
       text-wrap: pretty;
     }
-    #connect,
+    & #connect,
     .desc {
       grid-column: 1/3;
     }
   }
   @container (width > 690px) {
-    .card {
+    & .card {
       padding: 1rem;
       grid-template-columns: 200px 1fr;
       grid-template-rows: 1fr;
     }
 
-    img {
+    & img {
       border-radius: 16px;
       margin-bottom: 1rem;
       grid-row: 1/3;
     }
 
-    .title {
+    & .title {
       display: block;
     }
 
-    .jobrole {
+    & .jobrole {
       font-size: 1.12rem;
       opacity: 0.7;
       margin-bottom: 1rem;
     }
 
-    .desc {
+    & .desc {
       grid-column: 2/3;
     }
 
-    #connect {
+    & #connect {
       margin: 0;
       grid-column: 1/2;
       background-color: inherit;
     }
   }
   @container (width > 865px) {
-    img {
+    & img {
       border-radius: 16px;
       margin-bottom: 1rem;
     }
 
-    .jobrole {
+    & .jobrole {
       font-size: 1.12rem;
       opacity: 0.7;
       margin-bottom: 1rem;
     }
 
-    .title,
+    & .title,
     .desc {
       margin-left: 1.5rem;
       margin-right: 1.5rem;
@@ -237,41 +238,41 @@ body {
 }
 
 #task_b {
-  .section_wrapper {
+  & .section_wrapper {
     container-type: inline-size;
   }
-  p {
+  & p {
     display: flex;
     align-items: center;
   }
-  .result > div:last-child > p:last-child {
+  & .result > div:last-child > p:last-child {
     opacity: 0.5;
   }
-  section {
+  & section {
     margin: 1rem;
   }
-  #dashboard {
+  & #dashboard {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     grid-auto-flow: column;
   }
-  article {
+  & article {
     background-color: var(--offgrey);
     border-radius: 16px;
     box-shadow: 1px 2px 5px var(--shadow);
   }
 
-  .person {
+  & .person {
     grid-row: 1/3;
   }
-  .person > div:first-child {
+  & .person > div:first-child {
     display: flex;
     flex-direction: column;
     padding: 1rem;
   }
 
-  .person img {
+  & .person img {
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 50%;
@@ -279,107 +280,107 @@ body {
     align-self: center;
   }
 
-  .title {
+  & .title {
     display: grid;
     grid-template-rows: 1fr auto;
     margin-top: 1rem;
   }
-  .title > h3 {
+  & .title > h3 {
     grid-row: 1/2;
     font-weight: normal;
     opacity: 0.5;
   }
 
-  .time {
+  & .time {
     margin-top: 1rem;
     background-color: var(--secondary);
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
   }
-  .time form {
+  & .time form {
     display: flex;
     gap: 5px;
     flex-direction: column;
     padding: 1rem;
   }
 
-  .result > div:last-child {
+  & .result > div:last-child {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
   }
-  .display {
+  & .display {
     font-size: 3rem;
   }
 
-  .result > div:first-child {
+  & .result > div:first-child {
     display: flex;
     justify-content: space-between;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     background-color: var(--secondary);
   }
-  .result > div:first-child > * {
+  & .result > div:first-child > * {
     padding: 0.7rem 1rem 0.7rem 1rem;
   }
-  svg {
+  & svg {
     fill: var(--primary);
   }
 
   @container (width < 750px) {
-    article {
+    & article {
       grid-column: 1/-1;
     }
 
-    .result > div:last-child {
+    & .result > div:last-child {
       flex-direction: row;
       justify-content: space-between;
       margin-bottom: 1rem;
     }
 
-    .display {
+    & .display {
       font-size: 2.4rem;
     }
 
-    .time form {
+    & .time form {
       flex-direction: row;
       justify-content: space-between;
     }
-    .person > div:first-child {
+    & .person > div:first-child {
       display: grid;
       grid-template-columns: 120px 1fr;
       justify-content: center;
       align-items: center;
     }
 
-    .title {
+    & .title {
       padding: 1rem;
     }
 
-    h3 {
+    & h3 {
       font-size: 1rem;
     }
 
-    h2 {
+    & h2 {
       font-size: 1.25rem;
     }
   }
 }
 
 #task_c {
-  .wrapper {
+  & .wrapper {
     container-type: inline-size;
   }
-  img {
+  & img {
     filter: grayscale();
   }
 
-  .wrapper > div {
+  & .wrapper > div {
     background-color: var(--bg-color);
     display: grid;
   }
-  button {
+  & button {
     border: none;
     padding: 0.7rem;
     border-radius: 16px;
@@ -391,24 +392,24 @@ body {
     margin-top: 3rem;
     cursor: pointer;
   }
-  h1 {
+  & h1 {
     grid-row: 2/3;
     margin: 1rem;
   }
-  .wrapper > div > div {
+  & .wrapper > div > div {
     margin: 1rem;
   }
 
-  button:hover {
+  & button:hover {
     opacity: 0.8;
   }
 
-  button > svg {
+  & button > svg {
     fill: var(--primary);
   }
 
   @container (width < 450px) {
-    img {
+    & img {
       aspect-ratio: 1;
       object-fit: cover;
     }
@@ -420,17 +421,17 @@ body {
       grid-template-columns: 1fr 1fr 1fr;
     } */
 
-    img {
+    & img {
       grid-column: 1/3;
       grid-row: 1/2;
     }
 
-    h1 {
+    & h1 {
       grid-column: 2/4;
       grid-row: 1/2;
       z-index: 1;
     }
-    .wrapper > div > div:last-child {
+    & .wrapper > div > div:last-child {
       grid-column: 2/4;
       grid-row: 1/2;
       align-self: center;
@@ -439,13 +440,13 @@ body {
   }
 
   @container (width > 900px) {
-    .wrapper > div {
+    & .wrapper > div {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       align-items: center;
     }
 
-    h1 {
+    & h1 {
       grid-column: 2/3;
       grid-row: 1/2;
       z-index: 1;
@@ -453,12 +454,12 @@ body {
       overflow: visible;
     }
 
-    img {
+    & img {
       grid-column: 2/3;
       grid-row: 1/2;
     }
 
-    .wrapper > div > div:last-child {
+    & .wrapper > div > div:last-child {
       grid-column: 3/4;
       margin-left: -5rem;
     }
@@ -466,16 +467,16 @@ body {
 }
 
 #task_d {
-  .wrapper {
+  & .wrapper {
     container-type: inline-size;
     margin: 1rem;
   }
 
-  section {
+  & section {
     display: grid;
     gap: 20px;
   }
-  article {
+  & article {
     background-color: var(--offgrey);
     padding: 1rem;
     border-radius: 16px;
@@ -485,69 +486,69 @@ body {
     gap: 20px;
   }
 
-  img {
+  & img {
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 50%;
     max-width: 80px;
   }
 
-  h2 {
+  & h2 {
     font-size: 1.1rem;
   }
 
-  article > p:nth-child(2) {
+  & article > p:nth-child(2) {
     font-weight: bold;
   }
-  article > p:nth-child(3) {
+  & article > p:nth-child(3) {
     font-size: 0.8rem;
   }
 
-  section > article > div {
+  & section > article > div {
     display: flex;
     gap: 15px;
   }
-  section > article > div > div {
+  & section > article > div > div {
     margin-top: 1rem;
   }
 
-  section > article > div > div > p {
+  & section > article > div > div > p {
     opacity: 0.5;
   }
 
-  section > article:nth-child(2),
+  & section > article:nth-child(2),
   section > article:nth-child(4) {
     background-color: var(--secondary);
   }
 
   @container (width > 550px) {
-    section {
+    & section {
       grid-template-columns: 1fr 1fr;
     }
   }
 
   @container (width > 1050px) {
-    section {
+    & section {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr 1fr;
     }
-    section > article:nth-child(1) {
+    & section > article:nth-child(1) {
       grid-column: 1/3;
       grid-row: 1/2;
     }
-    section > article:nth-child(2) {
+    & section > article:nth-child(2) {
       grid-column: 3/4;
       grid-row: 1/2;
     }
-    section > article:nth-child(3) {
+    & section > article:nth-child(3) {
       grid-column: 4/5;
       grid-row: 1/3;
     }
-    section > article:nth-child(4) {
+    & section > article:nth-child(4) {
       grid-column: 1/2;
       grid-row: 2/3;
     }
-    section > article:nth-child(5) {
+    & section > article:nth-child(5) {
       grid-column: 2/4;
       grid-row: 2/3;
     }
